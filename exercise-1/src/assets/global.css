@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+  @apply h-full w-full bg-white;
+}
+
+/* Example of using BEM Method */
+.header__mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    @apply h-[353px];
+  }
+  .header .header__desktop {
+    @apply hidden;
+  }
+  .header .header__mobile {
+    @apply object-cover h-full block;
+  }
+}/*# sourceMappingURL=global.css.map */

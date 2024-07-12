@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+  @apply h-full w-full bg-[#f9f9f9];
+}
+
+.tabs .tab--header_active {
+  @apply text-white font-bold;
+}
+
+.accordion .accordion--item {
+  @apply p-5 bg-slate-100 rounded-2xl mb-3;
+}
+.accordion .accordion--item.accordion--item_active svg {
+  @apply transition-all delay-[100ms] rotate-180;
+}
+.accordion .accordion--item.accordion--item_active .accordion--header {
+  @apply font-bold;
+}
+.accordion .accordion--header {
+  @apply w-full flex items-center justify-between;
+}
+.accordion .accordion--content {
+  @apply mt-4;
+}
+
+p {
+  @apply mb-4 leading-6;
+}
+p:last-child {
+  @apply mb-0;
+}
+
+ul {
+  @apply list-disc pl-4;
+}/*# sourceMappingURL=global.css.map */
