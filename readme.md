@@ -1,40 +1,32 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+## Vue + Vite
 
-Exercise 1
----
-Build a responsive page based on the designs.
+Frontend Assessment | Christian Emmanuel Concepcion
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+## Technologies used
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+Vuejs, SCSS, Taildwind CSS
 
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
+## Setup
 
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
+### `npm install`
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+Install node_modules
 
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+### `npm run dev`
 
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+Runs the app in the development mode.
+
+## Exercise 1
+
+For this project, I used Vue.js, Tailwind CSS, and SCSS. The project is divided into two components: the **Banner** component and the **CardList** component. To keep the code clean and organized, the data is stored in JSON format in the public folder. For CSS naming conventions, I’m using the BEM methodology.
+
+## Exercise 2
+
+On desktop view, I created a tabbed menu, and for small screens or mobile view, I implemented an accordion. This was achieved using media queries. I’m using Vue.js, and the onMounted hook runs when the component is mounted. It fetches data from /data.json and updates the tabs with the fetched data.
+
+Banana Explained:
+	1.	'b' + 'a' results in 'ba'.
+	2.	+ 'a' converts 'a' to NaN (Not-a-Number).
+	3.	Concatenating 'ba' and NaN gives 'baNaN'.
+	4.	Adding 'a' results in 'baNaNa'.
+	5.	.toLowerCase() to ensure that a string is in lowercase, converts 'baNaNa' to 'banana'.
