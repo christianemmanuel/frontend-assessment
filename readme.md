@@ -25,8 +25,8 @@ For this project, I used Vue.js, Tailwind CSS, and SCSS. The project is divided 
 On desktop view, I created a tabbed menu, and for small screens or mobile view, I implemented an accordion. This was achieved using media queries. I’m using Vue.js, and the onMounted hook runs when the component is mounted. It fetches data from /data.json and updates the tabs with the fetched data.
 
 Banana Explained:
-1. 'b' + 'a' results in 'ba'.
-2. + 'a' converts 'a' to NaN (Not-a-Number).
-3. Concatenating 'ba' and NaN gives 'baNaN'.
-4. Adding 'a' results in 'baNaNa'.
-5. .toLowerCase() to ensure that a string is in lowercase, converts 'baNaNa' to 'banana'.
+1) 'b' + 'a' results in 'ba'.
+2) + 'a' converts 'a' to NaN (Not-a-Number).
+3) Concatenating 'ba' and NaN gives 'baNaN'.
+4) Adding 'a' results in 'baNaNa'.
+5) .toLowerCase() to ensure that a string is in lowercase, converts 'baNaNa' to 'banana'.
